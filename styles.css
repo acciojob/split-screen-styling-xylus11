@@ -52,4 +52,5 @@ footer{
 .content>aside{
 	padding: 1em;
 	grid-area: a;
+	flex:3 1 0%;
 }
