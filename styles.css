@@ -27,7 +27,7 @@ main{
 	"c"
 	"f";
 }
-#content{
+.content{
 	padding: 1em;
 	grid-area: c;
 	display: grid;
@@ -45,11 +45,11 @@ footer{
 	grid-area: f;
 	background-color: yellowgreen;
 }
-article{
+.content>article{
 	padding: 1em;
 	grid-area: art;
 }
-aside{
+.content>aside{
 	padding: 1em;
 	grid-area: a;
 }
