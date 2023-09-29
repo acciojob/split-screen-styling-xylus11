@@ -1,1 +1,56 @@
 /*  your css code here. If applicable */
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 16.667% 83.333%;
+	grid-template-areas:
+	"n m"
+	"n m"
+	"n m";
+}
+nav{
+	grid-area: n;
+	background-color: #D7E8D4;
+	padding: 1em;
+}
+main{
+	grid-area: m;
+	display: grid;
+	grid-template-rows:20% 60% 20%;
+	padding: 1em;
+	grid-template-areas:
+	"h"
+	"c"
+	"f";
+}
+#content{
+	padding: 1em;
+	grid-area: c;
+	display: grid;
+	grid-template-columns: 75% 25%;
+	grid-template-areas:
+	"art a";
+}
+header{
+	padding: 1em;
+	grid-area: h;
+	background-color: yellowgreen;
+}
+footer{
+	padding: 1em;
+	grid-area: f;
+	background-color: yellowgreen;
+}
+article{
+	padding: 1em;
+	grid-area: art;
+}
+aside{
+	padding: 1em;
+	grid-area: a;
+}
