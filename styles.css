@@ -1,56 +1,44 @@
 /*  your css code here. If applicable */
-*{
-	padding: 0px;
-	margin: 0px;
-}
 body{
-	height: 100vh;
-	width: 100vw;
-	display: grid;
-	grid-template-columns: 16.667% 83.333%;
-	grid-template-areas:
-	"n m"
-	"n m"
-	"n m";
+	margin:0px;
+	padding:0px;
+    font-family: Arial, sans-serif;
 }
-nav{
-	grid-area: n;
-	background-color: #D7E8D4;
-	padding: 1em;
+.container{
+	display:flex;
+	flex-direction:row;
 }
-main{
-	grid-area: m;
-	display: grid;
-	grid-template-rows:20% 60% 20%;
-	grid-template-areas:
-	"h"
-	"c"
-	"f";
+.navbar{
+	display:flex;
+	background-color:#D7E8D4;
+	padding:1em;
+	min-width:16.67%vw;
+	flex:1;
+}
+.header,.footer{
+	background-color:yellowgreen;
+	padding:1em;
+	height:20%
 }
 .content{
-	padding: 1em;
-	grid-area: c;
-	display: grid;
-	grid-template-columns: 75% 25%;
-	grid-template-areas:
-	"art a";
+    flex: 5;
+    display: flex;
+    flex-direction: column;
 }
-header{
-	padding: 1em;
-	grid-area: h;
-	background-color: yellowgreen;
+.main-content {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
 }
-footer{
-	padding: 1em;
-	grid-area: f;
-	background-color: yellowgreen;
+
+.article {
+    flex: 3;
+    padding: 1em;
+    min-height: 60vh; 
 }
-.content>article{
-	padding: 1em;
-	grid-area: art;
-}
-.content>aside{
-	padding: 1em;
-	grid-area: a;
-	flex:3 1 0%;
+
+.aside {
+    flex: 1;
+    padding: 1em;
+	background-color:#f5f5db;
 }
