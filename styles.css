@@ -21,12 +21,12 @@ body{
 	height:20%;
 	flex:1;
 }
-.content{
+.main-content{
     flex: 4;
     display: flex;
     flex-direction: column;
 }
-.main-content {
+.content {
     display: flex;
     flex-direction: row;
     flex: 5;
