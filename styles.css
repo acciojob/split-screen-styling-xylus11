@@ -22,7 +22,6 @@ main{
 	grid-area: m;
 	display: grid;
 	grid-template-rows:20% 60% 20%;
-	padding: 1em;
 	grid-template-areas:
 	"h"
 	"c"
